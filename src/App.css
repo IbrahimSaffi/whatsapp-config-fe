@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
+body{
+  background-color: #E0F9DC;
+  font-family: 'Nerko One', cursive;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dot {
+   width: 14px;
+   height: 14px;
+   background-color: #D1D6E6;
+   border-radius: 7px;
+ }
+ .dot-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  left: 0;
+  position: relative;
+ }
+ .dot-container p{
+  position: absolute;
+  width: 100%;
+  left: 30px;
+  top:  40px;
+  width: 200px;
+ }
+ .line{
+  height:90%;
+  width:2px;
+  background-color: #D1D6E6;
+  margin-left:6px;
+  position: absolute;
+  
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lines{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:flex-start;
+  position: relative;
+  background-color: #C4FDC4;
+  width: 40%;
+  padding: 20px;
+  height: 70vh;
+  gap: 100px;
+  border: 3px solid #D1D6E6;
+  border-radius: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.screen-one{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
 }
+button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5899509d;
+  border: none;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+ height: 100%;
+}
+.header{
+height: 50px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #C4FDC4;
+padding: 10px;
+position: relative;
+}
+.prev-btn{
+  position: absolute;
+  right: 50px;
+}
+.description-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%; 
+  margin: 10vh 10vw;
+}
+.screen-two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description{
+  background-color:#C4FDC4;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid #D1D6E6;
+}
+.buttons{
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+button:hover{
+  filter: brightness(80%);
 }
